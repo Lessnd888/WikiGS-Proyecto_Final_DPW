@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soundtracks - WikiGS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="soundstyle.css">
+    <link rel="stylesheet" href="animated.css">
+    <!--Fuente-->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+</div>
+
+
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <img src="Imagenes/WikiGS.png" alt="" width="70" height="42" class="d-inline-block align-text-top mx-5">
+          <a class="navbar-brand" href="index.html">Novedades</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="navbar-brand" href="Recomendaciones.html">Recomendaciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="navbar-brand" href="minigame/indexminijuego.html">Minijuego</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+
+
+    <!--Titulo-->
+    <div class="container">
+        <header class="text-center my-4">
+            <h1 class="arcade-title">SoundTracks</h1>
+        </header>
+        <!--Soundtrack 1-->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card text-center audio-card">
+                    <img src="img/zelda.jpg" class="card-img-top" alt="Zelda">
+                    <div class="card-body">
+                        <h6 class="card-title">Lost Woods - The Legend of Zelda</h6>
+                        <div class="audio-container">
+                        <audio class="audio-player">
+                            <source src="soundtracks/Lost Woods - The Legend of Zelda_ Ocarina Of Time (128 kbps).mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--Soundtrack 2-->
+            <div class="col-md-4">
+                <div class="card text-center audio-card">
+                    <img src="img/donkeykong.jpg" class="card-img-top" alt="DonkeyKong">
+                    <div class="card-body">
+                        <h6 class="card-title">Forest Interlude - Donkey Kong 2</h6>
+                        <div class="audio-container">
+                        <audio class="audio-player">
+                            <source src="soundtracks/[Donkey Kong 2 OST] Forest Interlude (256 kbps).mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--Soundtrack 3-->
+            <div class="col-md-4">
+                <div class="card text-center audio-card">
+                    <img src="img/persona3.jpg" class="card-img-top" alt="Persona3">
+                    <div class="card-body">
+                    <h6 class="card-title">Full Moon Full Life - Persona 3</h6>
+                        <div class="audio-container">
+                        <audio class="audio-player">
+                            <source src="soundtracks/Full Moon Full Life (128 kbps).mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--Soundtrack 4-->
+            <div class="col-md-6">
+                <div class="card text-center audio-card">
+                    <img src="img/supermario.jpg" class="card-img-top" alt="SuperMario">
+                    <div class="card-body">
+                        <h6 class="card-title">SMB Airship - Super Mario</h6>
+                        <div class="audio-container">
+                        <audio class="audio-player">
+                            <source src="soundtracks/Super Mario Maker Music - SMB Airship (Edit) - Multi-Layer Mix (128 kbps).mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--Soundtrack 5-->
+            <div class="col-md-6">
+                <div class="card text-center audio-card">
+                    <img src="img/doom.jpg" class="card-img-top" alt="Doom">
+                    <div class="card-body">
+                        <h6 class="card-title">BFG 10K - DOOM Eternal</h6>
+                        <div class="audio-container">
+                        <audio class="audio-player">
+                            <source src="soundtracks/Mick Gordon - BFG 10K (DOOM Eternal - Gamerip) [REUPLOAD] (128 kbps).mp3" type="audio/mpeg">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--Script del audio automatico-->
+    <script>
+        document.querySelectorAll('.audio-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                const audio = card.querySelector('.audio-player');
+                audio.play();
+            });
+            card.addEventListener('mouseleave', () => {
+                const audio = card.querySelector('.audio-player');
+                audio.pause();
+                audio.currentTime = 0;
+            });
+        });
+    </script>
+</body>
+</html>

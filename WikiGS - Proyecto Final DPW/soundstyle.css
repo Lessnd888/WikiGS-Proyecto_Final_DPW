@@ -1,0 +1,39 @@
+
+
+.arcade-title {
+    font-size: 3em;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.card {
+    background-color: aliceblue;
+    border: 2px solid #ffffff;
+    color: #000000;
+    margin-bottom: 2rem;
+    transition: transform 0.3s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    color: #000000;
+    font-size: 1.2em;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #00ff00;
+}
+
+audio {
+    width: 100%;
+    outline: none;
+}
+
+

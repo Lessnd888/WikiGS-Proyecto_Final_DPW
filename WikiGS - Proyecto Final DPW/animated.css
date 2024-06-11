@@ -1,0 +1,108 @@
+@font-face {
+    font-family: 'Shuffle';
+    src: url(/Fuentes/shuttle_x/SHUTTLE-X.ttf);
+}
+@font-face {
+    font-family: 'Arcade';
+    src: url(/Fuentes/8_bit_arcade/8-bit\ Arcade\ Out.ttf);
+}
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+.navbar{
+    font-family: Shuffle;
+    background-color: aliceblue;
+}
+
+.card-text, .card-title, .justify-content-around, .arcade-title, .content{
+    font-family: Shuffle;
+}
+
+body{
+    background: radial-gradient(circle,#24246e,#06051f);
+    height: 100vh;
+}
+.wrapper span{
+    position: fixed;
+    top: -120px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
+    animation: animate 10s linear infinite;    
+}
+.wrapper span:nth-child(1){
+    left: 60px;
+    animation-delay:0.6s;
+    border: 5px solid cyan;
+}
+.wrapper span:nth-child(2){
+    left: 60%;
+    animation-delay: 3s;
+    width: 60px;
+    height: 60px;
+    background: #ff4293;
+}
+.wrapper span:nth-child(3){
+    left: 20%;
+    animation-delay: 2s;
+    border: 5px solid #fff;    
+}
+.wrapper span:nth-child(4){
+    left: 30%;
+    animation-delay: 5s;
+    width: 80px;
+    height: 80px;
+    background: #befb46;
+}
+.wrapper span:nth-child(5){
+    left: 40%;
+    animation-delay: 1s;
+    border: 5px solid #ff4293;
+}
+.wrapper span:nth-child(6){
+    left: 50%;
+    animation-delay: 7s;
+    border: 5px solid deepskyblue;
+}
+.wrapper span:nth-child(7){
+    left: 60%;
+    animation-delay: 6s;
+    width: 100px;
+    height: 100px;
+    background: #ffd59e;
+}
+.wrapper span:nth-child(8){
+    left: 70%;
+    animation-delay: 8s;
+    border: 5px solid #befb46;
+}
+.wrapper span:nth-child(9){
+    left: 80%;
+    animation-delay: 6s;
+    width: 90px;
+    height: 90px;
+    background: cyan;
+}
+.wrapper span:nth-child(10){
+    left: 90%;
+    animation-delay: 4s;
+    border: 5px solid #fff;    
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    80%{
+        opacity: 0.7;
+    }
+    100%{
+        transform: translateY(800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+.bi .bi-youtube{
+    width: 500re,;
+    height: 500rem;
+}

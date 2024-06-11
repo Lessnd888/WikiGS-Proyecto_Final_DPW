@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catch The Beat</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+    <link rel="stylesheet" href="stylejuego.css">
+</head>
+<body>
+    <div id="instructions">
+        <p>Mueve al catcher usando las flechas del teclado:</p>
+        <img src="assets/arrow_keys.png" alt="Flechas del teclado">
+        <p>Si presionas arriba tendrás un boost de velocidad!</p>
+        <p>Atrapa las frutas buenas (naranjas) y evita las frutas malas (manzanas con gusanos).</p>
+        <img src="assets/path_to_fruit_image.png" alt="Naranja">
+        <img src="assets/path_to_bad_fruit_image.png" alt="Manzana con gusano">
+        <p>Al dejar caer una fruta buena o atrapar una fruta mala, pierdes una vida.</p>
+        <p>Ganas el juego si llegas a 15 puntos.</p>
+        <button id="start-button">Empezar Juego</button>
+    </div>
+    <div id="game-container"></div>
+    <div id="game-over-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <p id="modal-text"></p>
+            <button id="retry-button">Jugar de nuevo</button>
+        </div>
+    </div>
+    <script src="mainjuego.js"></script>
+</body>
+</html>
